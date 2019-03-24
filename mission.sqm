@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={10270.438,192.04962,18959.428};
-		dir[]={0.16471639,-0.49199751,0.85487425};
-		up[]={0.093085542,0.87059623,0.48311189};
-		aside[]={0.98193967,3.4735422e-008,-0.18919922};
+		pos[]={10328,277.83014,19035};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -72290,7 +72290,7 @@ class Mission
 					};
 					id=8385;
 					type="B_Soldier_F";
-					atlOffset=1.5258789e-005;
+					atlOffset=1.5735626e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -93819,11 +93819,13 @@ class Mission
 		class Item3334
 		{
 			dataType="Marker";
-			position[]={10328.788,126.426,19059.998};
+			position[]={10328,126.426,19060};
 			name="Sector_1";
 			type="Empty";
+			a=200;
+			b=200;
 			id=8649;
-			atlOffset=-3.0517578e-005;
+			atlOffset=0.021858215;
 		};
 	};
 	class Connections
