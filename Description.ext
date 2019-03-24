@@ -1,0 +1,723 @@
+//The Description File
+Disablechannels[] = {1, 2, 4, 6};
+
+//RespawnOnStart = 1;													//Start on Respawn Menu
+
+class CfgRoles {
+    class British														//Class name used in CfgRespawnInventory
+    {
+        displayName = "British Task Member";							//Name of the role, displayed in the respawn menu
+        icon = "a3\data_f\flags\flag_uk_co.paa";						//Icon shown next to the role name in the respawn screen
+    };
+};
+ 
+class CfgRespawnInventory {
+    class BAC	{
+		displayName = "Armour Crew";
+        role = "British";
+        icon = "\A3\ui_f\data\map\VehicleIcons\iconManLeader_ca.paa";
+        show = "side group _this == west";
+        weapons[] = {
+            "arifle_TRG20_F"
+        };
+
+        magazines[] = {
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red"
+        };
+
+        items[] = {
+			"FirstAidKit",
+			"FirstAidKit",
+			"Chemlight_blue",
+			"Chemlight_yellow",
+			"SmokeShell",
+			"SmokeShellBlue",
+			"SmokeShellPurple"
+        };
+
+        linkedItems[] = {
+			"V_PlateCarrierL_CTRG",
+			"H_HelmetB_snakeskin",
+			"ItemCompass",
+			"ItemMap",
+			"ItemRadio",
+			"ItemWatch",
+			"NVGoggles"
+        };
+
+        uniformClass = "U_B_CTRG_1";
+    };
+    class BCM	{
+		displayName = "Medic";
+        role = "British";
+        icon = "\A3\ui_f\data\map\VehicleIcons\iconManLeader_ca.paa";
+        show = "side group _this == west";
+        weapons[] = {
+            "arifle_TRG20_F"
+        };
+
+        magazines[] = {
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red"
+        };
+
+        items[] = {
+			"Medikit",
+			"FirstAidKit",
+			"FirstAidKit",
+			"FirstAidKit",
+			"FirstAidKit",
+			"FirstAidKit",
+			"FirstAidKit",
+			"FirstAidKit",
+			"FirstAidKit",
+			"FirstAidKit",
+			"FirstAidKit",
+			"Chemlight_blue",
+			"Chemlight_blue",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellBlue",
+			"SmokeShellBlue",
+			"SmokeShellPurple",
+			"SmokeShellPurple"
+        };
+
+        linkedItems[] = {
+			"V_PlateCarrierL_CTRG",
+			"H_HelmetB_snakeskin",
+			"optic_ACO_grn",
+			"ItemCompass",
+			"ItemMap",
+			"ItemRadio",
+			"ItemWatch",
+			"NVGoggles"
+        };
+
+        uniformClass = "U_B_CTRG_1";
+		backpack = "B_AssaultPack_rgr";
+    };
+
+    class BENG	{
+		displayName = "Sapper";
+        role = "British";
+        icon = "\A3\ui_f\data\map\VehicleIcons\iconManLeader_ca.paa";
+        show = "side group _this == west";
+        weapons[] = {
+            "arifle_TRG20_F"
+        };
+
+        magazines[] = {
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"200Rnd_556x45_Box_Red_F",
+			"APERSMine_Range_Mag",
+			"APERSMine_Range_Mag",
+			"APERSMine_Range_Mag",
+			"APERSMine_Range_Mag",
+			"APERSMine_Range_Mag",
+			"ATMine_Range_Mag"
+        };
+
+        items[] = {
+			"FirstAidKit",
+			"Chemlight_blue",
+			"Chemlight_blue",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellBlue",
+			"SmokeShellBlue",
+			"SmokeShellPurple",
+			"SmokeShellPurple",
+			"ToolKit",
+			"MineDetector",
+
+        };
+
+        linkedItems[] = {
+			"V_PlateCarrierL_CTRG",
+			"H_HelmetB_snakeskin",
+			"optic_ACO_grn",
+			"ItemCompass",
+			"ItemMap",
+			"ItemRadio",
+			"ItemWatch",
+			"NVGoggles"
+        };
+
+        uniformClass = "U_B_CTRG_1";
+		backpack = "B_AssaultPack_rgr";
+    };
+	
+    class BFO	{
+		displayName = "Spotter";
+        role = "British";
+        icon = "\A3\ui_f\data\map\VehicleIcons\iconManLeader_ca.paa";
+        show = "side group _this == west";
+        weapons[] = {
+            "arifle_TRG20_F",
+			"Laserdesignator"
+        };
+
+        magazines[] = {
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag"
+        };
+
+        items[] = {
+			"FirstAidKit",
+			"FirstAidKit",
+			"Chemlight_blue",
+			"Chemlight_blue",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellBlue",
+			"SmokeShellBlue",
+			"SmokeShellPurple",
+			"SmokeShellPurple"
+        };
+
+        linkedItems[] = {
+			"V_PlateCarrierL_CTRG",
+			"H_HelmetB_snakeskin",
+			"optic_Hamr",
+			"ItemCompass",
+			"ItemMap",
+			"ItemRadio",
+			"ItemWatch",
+			"NVGoggles"
+        };
+
+        uniformClass = "U_B_FullGhillie_sard";
+		backpack = "B_AssaultPack_rgr";
+    };
+
+    class BGRN	{
+		displayName = "Grenadier";
+        role = "British";
+        icon = "\A3\ui_f\data\map\VehicleIcons\iconManLeader_ca.paa";
+        show = "side group _this == west";
+        weapons[] = {
+            "arifle_TRG21_GL_F"
+        };
+
+        magazines[] = {
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"200Rnd_556x45_Box_Red_F",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_SmokeBlue_Grenade_shell",
+			"1Rnd_SmokeBlue_Grenade_shell",
+			"1Rnd_SmokeBlue_Grenade_shell",
+			"1Rnd_SmokeBlue_Grenade_shell",
+			"1Rnd_SmokeBlue_Grenade_shell",
+			"1Rnd_SmokePurple_Grenade_shell",
+			"1Rnd_SmokePurple_Grenade_shell",
+			"1Rnd_SmokePurple_Grenade_shell",
+			"1Rnd_SmokePurple_Grenade_shell",
+			"1Rnd_SmokePurple_Grenade_shell",
+			"UGL_FlareWhite_F",
+			"UGL_FlareWhite_F",
+			"UGL_FlareWhite_F",
+			"UGL_FlareWhite_F",
+			"UGL_FlareWhite_F",
+			"UGL_FlareGreen_F",
+			"UGL_FlareGreen_F",
+			"UGL_FlareGreen_F",
+			"UGL_FlareGreen_F",
+			"UGL_FlareGreen_F"
+        };
+
+        items[] = {
+			"FirstAidKit",
+			"Chemlight_blue",
+			"Chemlight_blue",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellBlue",
+			"SmokeShellBlue",
+			"SmokeShellPurple",
+			"SmokeShellPurple",
+
+        };
+
+        linkedItems[] = {
+			"V_PlateCarrierL_CTRG",
+			"H_HelmetB_snakeskin",
+			"optic_ACO_grn",
+			"ItemCompass",
+			"ItemMap",
+			"ItemRadio",
+			"ItemWatch",
+			"NVGoggles"
+        };
+
+        uniformClass = "U_B_CTRG_1";
+		backpack = "B_AssaultPack_rgr";
+    };
+	
+    class BHAT	{
+		displayName = "Heavy Anti-Tank";
+        role = "British";
+        icon = "\A3\ui_f\data\map\VehicleIcons\iconManLeader_ca.paa";
+        show = "side group _this == west";
+        weapons[] = {
+            "arifle_TRG20_F",
+			"launch_B_Titan_short_F"
+        };
+
+        magazines[] = {
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"200Rnd_556x45_Box_Red_F",
+			"Titan_AT",
+			"Titan_AT",
+			"Titan_AP",
+			"Titan_AP"
+        };
+
+        items[] = {
+			"FirstAidKit",
+			"Chemlight_blue",
+			"Chemlight_blue",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellBlue",
+			"SmokeShellBlue",
+			"SmokeShellPurple",
+			"SmokeShellPurple"
+        };
+
+        linkedItems[] = {
+			"V_PlateCarrierL_CTRG",
+			"H_HelmetB_snakeskin",
+			"optic_ACO_grn",
+			"ItemCompass",
+			"ItemMap",
+			"ItemRadio",
+			"ItemWatch",
+			"NVGoggles"
+        };
+
+        uniformClass = "U_B_CTRG_1";
+		backpack = "B_AssaultPack_rgr";
+    };
+	
+    class BHS	{
+		displayName = "Sniper";
+        role = "British";
+        icon = "\A3\ui_f\data\map\VehicleIcons\iconManLeader_ca.paa";
+        show = "side group _this == west";
+        weapons[] = {
+            "srifle_DMR_02_F",
+            "hgun_P07_F"
+        };
+
+        magazines[] = {
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"10Rnd_338_Mag",
+			"16Rnd_9x21_Mag",
+			"16Rnd_9x21_Mag",
+			"16Rnd_9x21_Mag"
+        };
+
+        items[] = {
+			"FirstAidKit",
+			"FirstAidKit",
+			"Chemlight_blue",
+			"Chemlight_blue",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellBlue",
+			"SmokeShellBlue",
+			"SmokeShellPurple",
+			"SmokeShellPurple"
+        };
+
+        linkedItems[] = {
+			"V_PlateCarrierL_CTRG",
+			"H_HelmetB_snakeskin",
+			"optic_LRPS",
+			"bipod_01_F_blk",
+			"ItemCompass",
+			"ItemMap",
+			"ItemRadio",
+			"ItemWatch",
+			"NVGoggles"
+        };
+
+        uniformClass = "U_B_FullGhillie_sard";
+		backpack = "B_AssaultPack_rgr";
+    };
+
+    class BLAR	{
+		displayName = "Autorifleman";
+        role = "British";
+        icon = "\A3\ui_f\data\map\VehicleIcons\iconManLeader_ca.paa";
+        show = "side group _this == west";
+        weapons[] = {
+            "LMG_03_F"
+        };
+
+        magazines[] = {
+			"200Rnd_556x45_Box_Red_F",
+			"200Rnd_556x45_Box_Red_F",
+			"200Rnd_556x45_Box_Red_F",
+			"200Rnd_556x45_Box_Red_F",
+			"200Rnd_556x45_Box_Red_F",
+			"200Rnd_556x45_Box_Red_F",
+			"200Rnd_556x45_Box_Red_F",
+			"200Rnd_556x45_Box_Red_F"
+        };
+
+        items[] = {
+			"FirstAidKit",
+			"Chemlight_blue",
+			"Chemlight_blue",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellBlue",
+			"SmokeShellBlue",
+			"SmokeShellPurple",
+			"SmokeShellPurple"
+        };
+
+        linkedItems[] = {
+			"V_PlateCarrierL_CTRG",
+			"H_HelmetB_snakeskin",
+			"optic_ACO_grn",
+			"ItemCompass",
+			"ItemMap",
+			"ItemRadio",
+			"ItemWatch",
+			"NVGoggles"
+        };
+
+        uniformClass = "U_B_CTRG_1";
+		backpack = "B_AssaultPack_rgr";
+    };
+	
+    class BLAT	{
+		displayName = "Light Anti-Tank";
+        role = "British";
+        icon = "\A3\ui_f\data\map\VehicleIcons\iconManLeader_ca.paa";
+        show = "side group _this == west";
+        weapons[] = {
+            "arifle_TRG20_F",
+			"launch_MRAWS_olive_F"
+        };
+
+        magazines[] = {
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"200Rnd_556x45_Box_Red_F",
+			"MRAWS_HEAT_F",
+			"MRAWS_HEAT_F",
+			"MRAWS_HE_F",
+			"MRAWS_HE_F"
+        };
+
+        items[] = {
+			"FirstAidKit",
+			"Chemlight_blue",
+			"Chemlight_blue",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellBlue",
+			"SmokeShellBlue",
+			"SmokeShellPurple",
+			"SmokeShellPurple"
+        };
+
+        linkedItems[] = {
+			"V_PlateCarrierL_CTRG",
+			"H_HelmetB_snakeskin",
+			"optic_ACO_grn",
+			"ItemCompass",
+			"ItemMap",
+			"ItemRadio",
+			"ItemWatch",
+			"NVGoggles"
+        };
+
+        uniformClass = "U_B_CTRG_1";
+		backpack = "B_AssaultPack_rgr";
+    };
+
+    class BMM	{
+		displayName = "Marksman";
+        role = "British";
+        icon = "\A3\ui_f\data\map\VehicleIcons\iconManLeader_ca.paa";
+        show = "side group _this == west";
+        weapons[] = {
+            "arifle_TRG21_F"
+        };
+
+        magazines[] = {
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"200Rnd_556x45_Box_Red_F"
+        };
+
+        items[] = {
+			"FirstAidKit",
+			"Chemlight_blue",
+			"Chemlight_blue",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellBlue",
+			"SmokeShellBlue",
+			"SmokeShellPurple",
+			"SmokeShellPurple"
+        };
+
+        linkedItems[] = {
+			"V_PlateCarrierL_CTRG",
+			"H_HelmetB_snakeskin",
+			"optic_Hamr",
+			"ItemCompass",
+			"ItemMap",
+			"ItemRadio",
+			"ItemWatch",
+			"NVGoggles"
+        };
+
+        uniformClass = "U_B_CTRG_1";
+		backpack = "B_AssaultPack_rgr";
+    };
+	
+    class BSS	{
+		displayName = "Sharpshooter";
+        role = "British";
+        icon = "\A3\ui_f\data\map\VehicleIcons\iconManLeader_ca.paa";
+        show = "side group _this == west";
+        weapons[] = {
+            "srifle_DMR_03_F"
+        };
+
+        magazines[] = {
+			"20Rnd_762x51_Mag",
+			"20Rnd_762x51_Mag",
+			"20Rnd_762x51_Mag",
+			"20Rnd_762x51_Mag",
+			"20Rnd_762x51_Mag",
+			"20Rnd_762x51_Mag",
+			"20Rnd_762x51_Mag",
+			"20Rnd_762x51_Mag",
+			"20Rnd_762x51_Mag",
+			"20Rnd_762x51_Mag",
+			"20Rnd_762x51_Mag",
+			"20Rnd_762x51_Mag",
+			"20Rnd_762x51_Mag",
+			"20Rnd_762x51_Mag",
+			"20Rnd_762x51_Mag",
+			"20Rnd_762x51_Mag",
+			"20Rnd_762x51_Mag",
+			"20Rnd_762x51_Mag",
+			"20Rnd_762x51_Mag",
+			"20Rnd_762x51_Mag"
+        };
+
+        items[] = {
+			"FirstAidKit",
+			"FirstAidKit",
+			"FirstAidKit",
+			"FirstAidKit",
+			"Chemlight_blue",
+			"Chemlight_blue",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellBlue",
+			"SmokeShellBlue",
+			"SmokeShellPurple",
+			"SmokeShellPurple"
+        };
+
+        linkedItems[] = {
+			"V_PlateCarrierL_CTRG",
+			"H_HelmetB_snakeskin",
+			"optic_SOS",
+			"bipod_01_F_blk",
+			"ItemCompass",
+			"ItemMap",
+			"ItemRadio",
+			"ItemWatch",
+			"NVGoggles"
+        };
+
+        uniformClass = "U_B_CTRG_1";
+		backpack = "B_AssaultPack_rgr";
+    };
+	
+    class BUAV	{
+		displayName = "Drone Operator";
+        role = "British";
+        icon = "\A3\ui_f\data\map\VehicleIcons\iconManLeader_ca.paa";
+        show = "side group _this == west";
+        weapons[] = {
+            "arifle_TRG20_F"
+        };
+
+        magazines[] = {
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"30Rnd_556x45_Stanag_red",
+			"200Rnd_556x45_Box_Red_F"
+        };
+
+        items[] = {
+			"FirstAidKit",
+			"Chemlight_blue",
+			"Chemlight_blue",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellBlue",
+			"SmokeShellBlue",
+			"SmokeShellPurple",
+			"SmokeShellPurple"
+        };
+
+        linkedItems[] = {
+			"V_PlateCarrierL_CTRG",
+			"H_HelmetB_snakeskin",
+			"optic_ACO_grn",
+			"ItemCompass",
+			"ItemMap",
+			"ItemRadio",
+			"ItemWatch",
+			"NVGoggles",
+			"B_UavTerminal"
+        };
+
+        uniformClass = "U_B_CTRG_1";
+		backpack = "B_UAV_01_backpack_F";
+    };
+};
